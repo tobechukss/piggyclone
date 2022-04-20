@@ -1,0 +1,151 @@
+@import "~bootstrap/scss/bootstrap";
+
+.investment {
+    position: relative;
+
+    padding: 90px 0 ;
+   
+ 
+  .invest-img {
+    width: 100%;
+   
+      .pic {
+        width: 300px;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        z-index: 5;
+        @include media-breakpoint-down(md) {
+          max-width: 200px;
+          
+        }
+      }
+
+      .circles {
+          position: absolute;
+          bottom: 400px;
+          left: 100px;
+          z-index: 2;
+         
+          @media  (max-width:992px) {
+            bottom: 700px;
+          }
+          @media  (max-width:768px) {
+            bottom: 500px;
+          }
+          @include media-breakpoint-down(sm) {
+            bottom: 500px;
+            
+          }
+      }
+
+      .purp {
+          position: absolute;
+          bottom: 600px;
+          left: 400px;
+          z-index: 4;
+          @include media-breakpoint-down(sm) {
+            left: 0;
+            
+          }
+      }
+  }
+
+  .text-block {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+
+      @include media-breakpoint-down(md) {
+        margin:52px  auto;
+      
+    }
+     
+
+      h3 {
+          order: 1;
+          background-color: #ecdbff;
+          width: max-content;
+          padding: 10px;
+          border-radius: 15px;
+          color: #7913E5;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          @include media-breakpoint-down(md) {
+              margin: auto;
+            text-align: center;
+          }
+  
+      }
+
+      h1 {
+          order: 2;
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 600;
+          font-size: 60px;
+          max-width: 600px;
+          margin-top: 40px;
+          @include media-breakpoint-down(md) {
+            text-align: center;
+            font-size: 42px;
+          }
+    
+      }
+
+      p {
+          order: 3;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          
+          color: #353535;
+          @include media-breakpoint-down(md) {
+            text-align: center;
+          }
+      }
+
+      a {
+          order: 4;
+          display: block;
+          width: 100%;
+          font-weight: 600;
+          color: #7913E5;
+          text-decoration: none;
+          @include media-breakpoint-down(md) {
+            text-align: center;
+          }
+      }
+  }
+
+  .saver {
+    width: 100%;
+    .saver-text {
+      color: white;
+      background-color: #0d60d8;
+      
+      .meet-saver {
+        display: block;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 700;
+        
+        font-size: 48px;
+        @include media-breakpoint-down(sm) {
+          font-size: 32px;
+          
+        }
+      }
+      p {
+
+        font-family: "DM Sans", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #353535;
+  
+      display: block;
+      }
+    }
+  
+  }
+}

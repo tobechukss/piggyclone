@@ -1,0 +1,136 @@
+@import "~bootstrap/scss/bootstrap";
+.builders {
+  position: relative;
+  
+  padding: 0 90px;
+ margin-top: 70px;
+
+ @include media-breakpoint-down(md) {
+  padding: 0 30px;
+}
+  .descr {
+    display: block;
+  
+    
+    @include media-breakpoint-down(md) {
+        text-align: center;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    h3 {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 600;
+      font-size: 42px;
+     display: block;
+    
+      max-width: 350px;
+
+      @include media-breakpoint-down(md) {
+        text-align: center;
+        margin: auto;
+      }
+    }
+    .title-descr {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #353535;
+      max-width: 300px;
+      display: block;
+    
+
+      @include media-breakpoint-down(md) {
+        text-align: center;
+        font-size: 14px;
+        margin: auto;
+      }
+    }
+
+    .butn-primary {
+      display: block;
+      color: #ffffff;
+      font-weight: 600;
+    width: max-content;
+    border-radius: 15px;
+        padding: 12px 24px;
+      background-color: #0c1825;
+      border: 1px solid #0c1825;
+      margin:20px 0;
+      &:hover {
+        background-color: #0d60d8;
+        border: 1px solid #0d60d8;
+        transition: all 1s;
+      }
+      @include media-breakpoint-down(md) {
+        margin:20px auto ;
+      }
+    }
+  }
+  
+  .custom-card {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f9f9f9;
+   margin-bottom: 40px;
+
+   .log {
+    display: block;
+    margin: 0;
+    margin-bottom: 30px;
+   
+    @include media-breakpoint-down(md) {
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+}
+
+   h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+     height: 35px;
+     margin-bottom: 20px;
+     margin-bottom: 20px;
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+  .card-descr {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #353535;
+   height: 130px;
+    
+   
+   
+    @include media-breakpoint-down(sm) {
+     text-align: center;
+      height: 50px;
+    }
+  }
+  .cta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+    &:hover {
+      margin-left: 60px;
+      transition: marginLeft 1s;
+
+    }
+    
+    @include media-breakpoint-down(md) {
+        justify-content: center;
+       
+      }
+      .cta-name {
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,199 @@
+@import "~bootstrap/scss/bootstrap";
+.hero {
+  position: relative;
+  
+  width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: auto;
+  z-index: 2;
+  padding: 50px 140px;
+
+  @include media-breakpoint-down(lg) {
+    padding: 50px 10px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 50px 10px;
+  }
+
+  .left-hero-side {
+    margin-top: 200px;
+    
+    @include media-breakpoint-down(md) {
+      margin-top: 30px;
+    }
+    .heading {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 75px;
+      letter-spacing: 0.01px;
+      word-spacing: 2px;
+      max-width: 550px;
+      @media (max-width: 900px) {
+        text-align: center;
+      }
+
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+        font-size: 48px;
+        letter-spacing: 0;
+        line-height: 60px;
+        word-spacing: 0;
+        max-width: 500px;
+      }
+    }
+    .description {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 200;
+      font-size: 18px;
+      color: #353535;
+      margin-bottom: 60px;
+      max-width: 500px;
+      @media (max-width: 900px) {
+        text-align: center;
+      }
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+        margin-top: 40px;
+      }
+    }
+.buttons {
+  @include media-breakpoint-down(lg) {
+    display: flex;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 0 auto;
+   
+  }
+}
+   
+
+    .butn {
+      padding: 20px 30px;
+      font-weight: 600;
+      border-radius: 9px;
+
+      margin-top: 30px;
+      cursor: pointer;
+      margin: auto;
+
+    }
+    .butn-primary {
+      color: #ffffff;
+      background-color: #0c1825;
+      border: 1px solid #0c1825;
+      &:hover {
+        background-color: #0d60d8;
+        border: 1px solid #0d60d8;
+        transition: all 1s;
+      }
+    }
+
+
+
+ 
+
+  }
+  .right-hero-side {
+    margin-top: 100px;
+    position: relative;
+    @include media-breakpoint-down(xl) {
+      margin-left: -90px;
+      margin-top: 90px;
+      }
+    @include media-breakpoint-down(lg) {
+    margin: 50px auto;
+    }
+  
+
+    @include media-breakpoint-down(md) {
+      margin-left: -130px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-left: -140px;
+      width: 80%;
+    }
+
+    .right-pic {
+      z-index: 3;
+      margin-left: 120px;
+      margin-top: 40px;
+      border-radius: 20px;
+      position: absolute;
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 150px;
+        width: 100%;
+      }
+    }
+    .circle {
+      position: absolute;
+      margin-left: 460px;
+      margin-top: 70px;
+      z-index: 4;
+      @include media-breakpoint-down(sm) {
+        margin-left: 410px;
+      }
+      
+    }
+    .rect {
+      position: absolute;
+      z-index: 2;
+      margin-top: 0;
+      margin-left: 170px;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+    .crosses {
+      position: absolute;
+      z-index: 4;
+      margin-top: 10px;
+      margin-left: 90px;
+      @include media-breakpoint-down(sm) {
+        margin-left: 120px;
+      }
+    }
+    .rent {
+      position: absolute;
+      z-index: 4;
+      margin-top: 180px;
+      @include media-breakpoint-down(sm) {
+        margin-left: 90px;
+        margin-top: 130px;
+      }
+    }
+    .investify {
+      position: absolute;
+      z-index: 4;
+      margin-left: 370px;
+      margin-top: 420px;
+      @include media-breakpoint-down(sm) {
+        margin-left: 170px;
+      }
+      @include media-breakpoint-down(xs) {
+        margin-left: 270px;
+      }
+    }
+
+    .dots {
+      position: absolute;
+    left: 40px;
+      margin-top: 390px;
+      z-index: 4;
+      @include media-breakpoint-down(sm) {
+        margin-left: 130px;
+        left: 10px;
+        margin-top: 340px;
+      }
+      @include media-breakpoint-down(xs) {
+        margin-left: 70px;
+      }
+    }
+  }
+}
